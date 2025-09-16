@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+     <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <span class="logo-primary">Jeroland</span>
+                    <span class="logo-secondary">Goron</span>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <button class="btn btn-primary contact-btn" onclick="scrollToSection('contact')">
+                    Get In Touch
+                </button>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="hero-greeting">Hi, I'm</span>
+                            <span class="hero-name">Jeroland Goron</span>
+                            <span class="hero-role">Graphics Designer | VA | Video Editor</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            I’m a dedicated Virtual Assistant, Graphics Designer, Video Editor, and GHL Funnel Builder with a passion for helping businesses grow and stand out online.
+
+As a Virtual Assistant, I provide reliable support to streamline operations and improve productivity.
+As a Graphics Designer, I craft creative, modern visuals for branding, marketing, and social media.
+As a Video Editor, I bring stories to life through cinematic, engaging edits.
+And with GoHighLevel funnel building, I design and optimize funnels that capture leads, nurture audiences, and drive conversions.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                                View My Work
+                            </button>
+                            <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                                Contact Me
+                            </button>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/jeroland-goron/" target="_blank" class="social-link">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://mail.google.com/mail/u/2/?hl=en#inbox?compose=new" target="_blank" class="social-link">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="profile-image">
+                            <img src="IMAGE/roland.JPG" alt="Jeroland Goron">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <button onclick="scrollToSection('about')" class="scroll-btn">
+                        <i data-lucide="arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>I’m a Virtual Assistant, Graphics Designer, Video Editor, and GHL Funnel Builder who helps businesses save time, stay organized, and grow online. From managing tasks and creating eye-catching designs to editing engaging videos and building high-converting GoHighLevel funnels, I deliver creative and reliable solutions that get results.</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I began my career over 3 years ago as a Virtual Assistant, 
+                            supporting entrepreneurs and businesses with daily tasks, 
+                            organization, and workflow management. This foundation taught 
+                            me the value of reliability, attention to detail, and effective communication. 
+                            As I grew, I discovered a passion for creativity, which led me into graphics design 
+                            and video editing, where I started creating visuals and content that helped brands 
+                            connect with their audiences in impactful ways.</p>
+                        
+                        <p>To further expand my skills, I added GoHighLevel funnel building, 
+                            allowing me to design and optimize high-converting funnels that drive leads and business growth.
+                             Today, I bring together organization, creativity, and strategy—offering a 
+                             unique mix of services that not only save clients time but also elevate their 
+                             brand presence and deliver measurable results.</p>
+                        
+                        <div class="tech-tags">
+                            <span class="tech-tag">Virtual Assistant</span>
+                            <span class="tech-tag">Graphic Designer</span>
+                            <span class="tech-tag">Video Editor</span>
+                            <span class="tech-tag">GHL</span>
+                            <span class="tech-tag">UI / UX</span>
+                            <span class="tech-tag">Visual Graphic Designer</span>
+                            <span class="tech-tag">Fashion Designer</span>
+                            <span class="tech-tag">Brand Identity</span>
+                        </div>
+                    </div>
+                    
+                    <div class="highlights-grid">
+                        <div class="highlight-card">
+                            <i data-lucide="hand" class="highlight-icon"></i>
+                            <h4>Efficient & Reliable Support</h4>
+                            <p>Over 3+ years of experience helping 
+                                businesses stay organized with emails, scheduling, research, and data management.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i data-lucide="spline-pointer" class="highlight-icon"></i>
+                            <h4>Creative Visual Solutions</h4>
+                            <p>Designing logos, branding, and social media 
+                                content that captures attention and strengthens brand identity.e</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i data-lucide="square-play" class="highlight-icon"></i>
+                            <h4>Engaging Storytelling</h4>
+                            <p>Transforming raw footage into cinematic, story-driven 
+                                edits for promos, reels, and marketing campaigns.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i data-lucide="cone" class="highlight-icon"></i>
+                            <h4>High-Converting Funnels</h4>
+                            <p>Building and optimizing GoHighLevel 
+                                funnels that attract leads, nurture audiences, and boost conversions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Skills & Technologies</h2>
+                    <p>Here are the technologies and tools I work with to bring ideas to life</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Graphics Design</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Adobe Photoshop, Adobe Illustrator, Canva</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Branding & Logo Design</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Social Media Graphics</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Marketing Materials</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Video Editing</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Short-form & Long-form Editing</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Social Media Reels/Promos</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Cinematic Storytelling</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Adobe Premiere Pro, After Effects, CapCut</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Funnel Building (GHL)</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Landing Page Design</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>GoHighLevel (CRM & Funnel Building)</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Automation & Workflows</span>
+                                    <span>60%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Lead Generation Optimization</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>Here are some of the projects I've worked on recently. Each one presented unique 
+                    challenges and opportunities to learn new technologies.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="IMAGE/11-Marketing-Tasks-to-Outsource-to-an-Ecommerce-Virtual-Clean.jpg" alt="E-Commerce Platform">
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce VA Support</h3>
+                            <p>Managed orders, customer inquiries, and product listings, improving response time and sales flow.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Branding Design</span>
+                                <span class="project-tag">Digital Branding</span>
+                                <span class="project-tag">E-com Graphics</span>
+                                <span class="project-tag">Online Store Branding</span>
+                                <span class="project-tag">Social Media Branding</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline btn-sm">
+                                    <i data-lucide="dock"></i>
+                                    View
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="IMAGE/5b8aa0219477603.Y3JvcCwxNjE2LDEyNjQsMCww.png" alt="Task Management App">
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Branding or Fashion Design</h3>
+                            <p>Designed lookbook layouts, social media content, and promotional graphics, strengthening brand identity.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Photoshop, Illustration, Canva, Indesign</span>
+                                <span class="project-tag">Creative Fashion Design</span>
+                                <span class="project-tag">Style & Identity</span>
+                                <span class="project-tag">Online Store Branding</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline btn-sm">
+                                    <i data-lucide="paintbrush"></i>
+                                    View
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="IMAGE/64fb34f7106150825b798526_64305275c3ef62b9a6bcf598_blog-post-content-image-play-webflow-ecommerce-template.jpeg" alt="Analytics Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3> Funnel & Video Content</h3>
+                            <p>Built GoHighLevel funnels & editing content videos.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">GHL Funnels</span>
+                                <span class="project-tag">Video Editing</span>
+                                <span class="project-tag">Cinematic Content</span>
+                                <span class="project-tag">Sales Funnel Design</span>
+                                <span class="project-tag">Promo & Reels</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-outline btn-sm">
+                                    <i data-lucide="square-play"></i>
+                                    View
+                                </a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Have a project in mind or just want to chat? I'd love to hear from you. 
+                    Let's create something amazing together.</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's talk</h3>
+                        <p>I'm always interested in new opportunities and interesting projects. 
+                        Whether you have a question or just want to say hi, feel free to reach out!</p>
+                        
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">rolandgoron2022@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Phone</p>
+                                    <p class="contact-value">+63 (912) 558-5703</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Location</p>
+                                    <p class="contact-value">La Trinidad, Philippines</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <div class="contact-form-card">
+                            <h3>Send me a message</h3>
+                            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" id="firstName" name="firstName" placeholder="Jeroland" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" id="lastName" name="lastName" placeholder="Goron" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="jeroland@example.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Project inquiry" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-full">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <span class="logo-primary">Jeroland</span>
+                        <span class="logo-secondary">Goron</span>
+                    </div>
+                    <p>VA | Visual Graphics Designer | Video Editor - based in the Philippines</p>
+                </div>
+                
+                <div class="footer-social">
+                   
+                    <a href="https://www.linkedin.com/in/jeroland-goron/" target="_blank" class="social-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/2/?hl=en#inbox?compose=new" target="_blank" class="social-link">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Jeroland Goron-PORTFOLIO<i data-lucide="Spade" class="Spade-icon"></i> </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
